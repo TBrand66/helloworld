@@ -17,5 +17,21 @@
 # """
 # print (course)
 
-course = 'python for beginners'
-print (course[0:])
+# course = 'python for beginners'
+# print (course[1:-1])
+
+### formated strings
+
+first = 'john'
+last = 'Smith'
+message = (first + ' [' + last +
+           '] is a coder')
+msg = f'{first} [{last}] is a coder'
+print(msg)
+
+course = 'python for beginner'
+print(len(course))
+print(course.upper())
+print(course.lower())
+print(course.find('o'))
+print(course.replace('beginner', 'Absolute beginner'))
