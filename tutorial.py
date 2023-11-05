@@ -1,4 +1,4 @@
-### Augumented assigned operator
+## Augumented assigned operator
 
 x = 10
 x -= 3
@@ -24,7 +24,7 @@ import math
 print(math.ceil(2.9))
 print(math.floor(2.9))
 
-# if statement
+if statement
 
 is_hot = True
 is_cold = False
@@ -48,3 +48,33 @@ if Good_credit:
 else:
     down_payment = 0.2 * price
 print(f"Down payment: ${down_payment}")
+
+
+name = input('pass: ')
+if int(name) <= 3:
+    print("name must be at least 3 characters")
+elif int(name) > 50:
+    print("name can be a maximum of 50 cahracters")
+else:
+    print("name looks good")
+
+
+
+name = input("name: ")
+if len(name) <= 3:
+    print("name must be at least 3 characters")
+elif len(name) > 50:
+    print("name can be a maximum of 50 characters")
+else:
+    print("name looks good")
+
+## weight converter
+
+weight = input('weight: ')
+unit = input("(L)bs or (k)g: ")
+if unit.upper() == "L":
+    converted = int(weight) * 0.45
+    print(f"You are {converted} kilos")
+else:
+    converted = int(weight) / 0.45
+    print(f"You are {converted} kg")
